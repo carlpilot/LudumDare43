@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23748849504805528}
   - component: {fileID: 64701782982613382}
   - component: {fileID: 114982432387945596}
+  - component: {fileID: 114661250901455298}
   m_Layer: 0
   m_Name: Food1
   m_TagString: Highlightable
@@ -100,6 +101,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &114661250901455298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585564589856042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdf6ed3cc77915419739e0f28fd6590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: 0
 --- !u!114 &114982432387945596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,4 +125,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightedMaterial: {fileID: 2100000, guid: 085eb5de59f62a6498ffd713a3431460, type: 2}
+  highlightText: Edible Sprout
   isHighlighted: 0

@@ -398,8 +398,11 @@
     <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Utility\z_MeshUtility.cs" />
     <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Utility\z_Util.cs" />
     <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Utility\z_Vector.cs" />
+    <Compile Include="Assets\Scripts\Harvestable.cs" />
     <Compile Include="Assets\Scripts\HighlightableObject.cs" />
     <Compile Include="Assets\Scripts\Highlighter.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\ItemScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\UIInventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />

@@ -1,20 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Highlighter : MonoBehaviour {
 
+    public Text highlightedIdentifier;
+
 	void Update () {
+        highlightedIdentifier.text = "";
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag ("Highlightable")) {
+            g.GetComponent<HighlightableObject> ().isHighlighted = false;
+        }
         RaycastHit hit;
-	    if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 10f)) {
+	    if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 6f)) {
             Debug.Log (hit.transform.name);
             if(hit.transform.tag.Equals("Highlightable")) {
                 hit.transform.GetComponent<HighlightableObject> ().isHighlighted = true;
+                highlightedIdentifier.text = hit.transform.GetComponent<HighlightableObject> ().highlightText;
             }
-        }
-        foreach (GameObject g in GameObject.FindGameObjectsWithTag ("Highlightable")) {
-            if (hit.transform != null && g != hit.transform.gameObject) {
-                g.GetComponent<HighlightableObject> ().isHighlighted = false;
+
+            if (Input.GetMouseButtonUp (0) && hit.collider.GetComponent<Harvestable>() != null) {
+                hit.collider.GetComponent<Harvestable> ().Harvest ();
             }
         }
     }

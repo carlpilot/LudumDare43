@@ -5,6 +5,7 @@ using UnityEngine;
 public class HighlightableObject : MonoBehaviour {
 
     public Material highlightedMaterial;
+    public string highlightText;
     private Material[] materials;
 
     public bool isHighlighted;
