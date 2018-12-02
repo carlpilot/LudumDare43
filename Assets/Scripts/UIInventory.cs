@@ -44,6 +44,15 @@ public class UIInventory : MonoBehaviour {
             }
         }
     }
+
+    public void RemoveItem (int itemID) {
+        for(int i = 0; i < inventory.Length; i++) {
+            if(inventory[i].id == itemID) {
+                inventory[i].num -= 1;
+                return;
+            }
+        }
+    }
 }
 
 public class ItemPlace {

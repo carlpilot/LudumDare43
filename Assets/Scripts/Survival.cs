@@ -43,11 +43,11 @@ public class Survival : MonoBehaviour {
 
         if (Input.GetKeyDown (eatKeyCode)) {
             bool successful = false;
-            if (inventory.items.items[inventory.inventory[inventory.selectedItem].id].foodValue > 0 && inventory.inventory[inventory.selectedItem].num > 0) {
+            if (food <= 0.97f && inventory.items.items[inventory.inventory[inventory.selectedItem].id].foodValue > 0 && inventory.inventory[inventory.selectedItem].num > 0) {
                 successful = true;
                 food = Mathf.Clamp01 (food + inventory.items.items[inventory.inventory[inventory.selectedItem].id].foodValue);
             }
-            if (inventory.items.items[inventory.inventory[inventory.selectedItem].id].waterValue > 0 && inventory.inventory[inventory.selectedItem].num > 0) {
+            if (water <= 0.97f && inventory.items.items[inventory.inventory[inventory.selectedItem].id].waterValue > 0 && inventory.inventory[inventory.selectedItem].num > 0) {
                 successful = true;
                 water = Mathf.Clamp01 (water + inventory.items.items[inventory.inventory[inventory.selectedItem].id].waterValue);
             }

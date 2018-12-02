@@ -5614,9 +5614,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1700692035978428}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59875846, y: 1.9389093, z: -1.6456891}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -5.908999, y: -9.58217, z: 1.3118382}
+  m_LocalScale: {x: 0.5, y: 0.50000036, z: 0.50000036}
   m_Children:
   - {fileID: 4805764448668800}
   - {fileID: 4408269815309264}
@@ -8919,7 +8919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ecec915ea2be9e4dae2da34f2c7ca8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avgTimeBetweenCoconutsSeconds: 20
+  avgTimeBetweenCoconutsSeconds: 30
   CoconutSpawningPointParent: {fileID: 4900939701329534}
   coconutPrefab: {fileID: 1204394590494010, guid: 47bed3956a0c37e4b9030e6fe194dce4,
     type: 2}
