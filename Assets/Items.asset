@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Name: Items
   m_EditorClassIdentifier: 
   items:
-  - name: FoodBamboo
+  - name: Edible Sprout
     id: 0
     icon: {fileID: 21300000, guid: 34ffc00956aad874489fabbf6776f9da, type: 3}
+  - name: Aether Coconut
+    id: 0
+    icon: {fileID: 21300000, guid: 3c22bfeef5a66b8439279c33a3543315, type: 3}
