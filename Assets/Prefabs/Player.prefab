@@ -312,10 +312,19 @@ MonoBehaviour:
   foodText: {fileID: 0}
   waterIndicator: {fileID: 0}
   waterText: {fileID: 0}
-  timeForFoodToDepleteCompletely: 60
-  timeForWaterToDepleteCompletely: 20
+  timeForFoodToDepleteCompletely: 180
+  timeForWaterToDepleteCompletely: 60
   foodPenaltyPerSecond: 0.05
   waterPenaltyPerSecond: 0.1
+  healthRegenPerSecond: 0.02
+  foodThresholdToRegenerate: 0.8
+  waterThresholdToRegenerate: 0.8
+  foodRegenPenaltyPerSecond: 0.02
+  waterRegenPenaltyPerSecond: 0.01
+  gameOver: {fileID: 0}
+  causeOfDeath: {fileID: 0}
+  inventory: {fileID: 0}
+  eatKeyCode: 101
 --- !u!124 &124637469867788622
 Behaviour:
   m_ObjectHideFlags: 1
