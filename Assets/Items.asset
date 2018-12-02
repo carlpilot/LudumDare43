@@ -15,10 +15,60 @@ MonoBehaviour:
   - name: Edible Sprout
     id: 0
     icon: {fileID: 21300000, guid: 34ffc00956aad874489fabbf6776f9da, type: 3}
-    foodValue: 0.25
+    foodValue: 0.05
     waterValue: 0
   - name: Aether Coconut
-    id: 0
+    id: 1
     icon: {fileID: 21300000, guid: 3c22bfeef5a66b8439279c33a3543315, type: 3}
+    foodValue: 0.05
+    waterValue: 0.2
+  - name: Bowl of Sprouts
+    id: 2
+    icon: {fileID: 21300000, guid: 161693a3c4b81904eae955996b575348, type: 3}
+    foodValue: 0.2
+    waterValue: 0
+  - name: Half Plank
+    id: 3
+    icon: {fileID: 21300000, guid: f365c245c4a4b9c499ea533ad9b46cb5, type: 3}
+    foodValue: 0
+    waterValue: 0
+  - name: Plank
+    id: 4
+    icon: {fileID: 21300000, guid: dbe4a950e47e26749bc760e808a17ef5, type: 3}
+    foodValue: 0
+    waterValue: 0
+  - name: Boat Side
+    id: 5
+    icon: {fileID: 21300000, guid: f40374ddc8fbd0044820eb85baf3f1b4, type: 3}
+    foodValue: 0
+    waterValue: 0
+  - name: Boat Bottom
+    id: 6
+    icon: {fileID: 21300000, guid: fc83f2cf92094974891d77d3223bfcee, type: 3}
+    foodValue: 0
+    waterValue: 0
+  - name: Boat Frame
+    id: 7
+    icon: {fileID: 21300000, guid: 2641a05bb83a0ed4f81be36aef4504c9, type: 3}
+    foodValue: 0
+    waterValue: 0
+  - name: Coconut Flotation Device
+    id: 8
+    icon: {fileID: 21300000, guid: 0c79b1bd6414c1f468ae6af590013bec, type: 3}
+    foodValue: 0.15
+    waterValue: 0.6
+  - name: Floating Boat
+    id: 9
+    icon: {fileID: 21300000, guid: 8402db1800f0f3145bc3994acd165283, type: 3}
+    foodValue: 0
+    waterValue: 0
+  - name: Set of Paddles
+    id: 10
+    icon: {fileID: 21300000, guid: b265cbe9e81313b4a86dc93bbf0e9d80, type: 3}
+    foodValue: 0.05
+    waterValue: 0.2
+  - name: Escape Vehicle
+    id: 11
+    icon: {fileID: 21300000, guid: 877096866d753f44980f11726694e9b9, type: 3}
     foodValue: 0.05
     waterValue: 0.2
