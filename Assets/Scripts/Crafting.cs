@@ -12,6 +12,8 @@ public class Crafting : MonoBehaviour {
 
     public CraftingGridItem[] grid;
 
+    public CraftingRecipesScriptableObject recipes;
+
     int firstClick = -1;
     int secondClick = -1;
 
@@ -25,6 +27,12 @@ public class Crafting : MonoBehaviour {
             craftingGrid.SetActive (true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            for (int i = 0; i < grid.Length; i++) {
+                grid[i].icon = grid[i].id >= 0 ? inventory.items.items[grid[i].id].icon : inventory.emptySprite;
+            }
+            if(Input.GetKeyDown(KeyCode.Escape)) {
+                ToggleCrafting ();
+            }
         } else {
             craftingGrid.SetActive (false);
         }
@@ -37,11 +45,12 @@ public class Crafting : MonoBehaviour {
     public void ToggleCrafting () {
         isCrafting = !isCrafting;
         InvalidateClicks ();
+
         if(!isCrafting) {
             for(int i = 0; i < grid.Length; i++) {
                 inventory.AddItem (grid[i].id);
                 grid[i].id = -1;
-                grid[i].icon = GameObject.Find ("Inventory").GetComponent<UIInventory> ().emptySprite;
+                grid[i].icon = inventory.emptySprite;
             }
         }
     }
@@ -74,5 +83,30 @@ public class Crafting : MonoBehaviour {
     public void InvalidateClicks () {
         firstClick = -1;
         secondClick = -1;
+    }
+
+    void ClearGridWithoutItems () {
+        for(int i = 0; i < grid.Length; i++) {
+            grid[i].id = -1;
+        }
+    }
+
+    public void ClearGrid () {
+        for (int i = 0; i < grid.Length; i++) {
+            if (grid[i].id >= 0)
+                inventory.AddItem (grid[i].id);
+        }
+        ClearGridWithoutItems ();
+    }
+
+    public void Craft () {
+
+        for(int i = 0; i < recipes.recipes.Length; i++) {
+            if(grid[0].id == recipes.recipes[i].topRow.x && grid[1].id == recipes.recipes[i].topRow.y && grid[2].id == recipes.recipes[i].bottomRow.x && grid[3].id == recipes.recipes[i].bottomRow.y) {
+                inventory.AddItem (recipes.recipes[i].result);
+                ClearGridWithoutItems ();
+                break;
+            }
+        }        
     }
 }

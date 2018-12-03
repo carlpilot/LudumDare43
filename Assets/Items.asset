@@ -17,58 +17,70 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 34ffc00956aad874489fabbf6776f9da, type: 3}
     foodValue: 0.05
     waterValue: 0
+    prefab: {fileID: 1506388963432166, guid: 855268e0303fbe244994e707a9bb2bfa, type: 2}
   - name: Aether Coconut
     id: 1
     icon: {fileID: 21300000, guid: 3c22bfeef5a66b8439279c33a3543315, type: 3}
     foodValue: 0.05
     waterValue: 0.2
+    prefab: {fileID: 1204394590494010, guid: 47bed3956a0c37e4b9030e6fe194dce4, type: 2}
   - name: Bowl of Sprouts
     id: 2
     icon: {fileID: 21300000, guid: 161693a3c4b81904eae955996b575348, type: 3}
     foodValue: 0.2
     waterValue: 0
+    prefab: {fileID: 1436171125080874, guid: ab0bb7503d2eb8d4aaa7946292ae005b, type: 2}
   - name: Half Plank
     id: 3
     icon: {fileID: 21300000, guid: f365c245c4a4b9c499ea533ad9b46cb5, type: 3}
     foodValue: 0
     waterValue: 0
+    prefab: {fileID: 1666393339097698, guid: 069a4e1dafe4a8642a1d8e8039a4755f, type: 2}
   - name: Plank
     id: 4
     icon: {fileID: 21300000, guid: dbe4a950e47e26749bc760e808a17ef5, type: 3}
     foodValue: 0
     waterValue: 0
+    prefab: {fileID: 1988402735810652, guid: 1d6d075ce23a51947aec7d9cb91d67ce, type: 2}
   - name: Boat Side
     id: 5
     icon: {fileID: 21300000, guid: f40374ddc8fbd0044820eb85baf3f1b4, type: 3}
     foodValue: 0
     waterValue: 0
+    prefab: {fileID: 1815870615611510, guid: 9838be54e22093f439b786eb0b255beb, type: 2}
   - name: Boat Bottom
     id: 6
     icon: {fileID: 21300000, guid: fc83f2cf92094974891d77d3223bfcee, type: 3}
     foodValue: 0
     waterValue: 0
+    prefab: {fileID: 1333736381876788, guid: b3f69708d80a233479a6f622295766e7, type: 2}
   - name: Boat Frame
     id: 7
     icon: {fileID: 21300000, guid: 2641a05bb83a0ed4f81be36aef4504c9, type: 3}
     foodValue: 0
     waterValue: 0
+    prefab: {fileID: 1659491089784518, guid: 8bf6db24a4df2064a888511299b590c9, type: 2}
   - name: Coconut Flotation Device
     id: 8
     icon: {fileID: 21300000, guid: 0c79b1bd6414c1f468ae6af590013bec, type: 3}
     foodValue: 0.15
     waterValue: 0.6
+    prefab: {fileID: 1249536100738154, guid: cae53c9c19401f245aba7a6c702890be, type: 2}
   - name: Floating Boat
     id: 9
     icon: {fileID: 21300000, guid: 8402db1800f0f3145bc3994acd165283, type: 3}
     foodValue: 0
     waterValue: 0
+    prefab: {fileID: 1816123893734740, guid: d3ec7a15c4af5b74d9e888195ebefdf2, type: 2}
   - name: Set of Paddles
     id: 10
     icon: {fileID: 21300000, guid: b265cbe9e81313b4a86dc93bbf0e9d80, type: 3}
     foodValue: 0.05
     waterValue: 0.2
+    prefab: {fileID: 1718932018382948, guid: 2db908fa5461ff545b7e1814364dbf88, type: 2}
   - name: Escape Vehicle
     id: 11
     icon: {fileID: 21300000, guid: 877096866d753f44980f11726694e9b9, type: 3}
     foodValue: 0.05
     waterValue: 0.2
+    prefab: {fileID: 1414610336996392, guid: 6cdc2d9be28787d459d9d760e841b9f7, type: 2}

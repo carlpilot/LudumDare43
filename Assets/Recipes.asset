@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e7fa300b2a123489c91114665dd767, type: 3}
+  m_Name: Recipes
+  m_EditorClassIdentifier: 
+  recipes:
+  - Name: BowlOfSprout
+    topRow: {x: 0, y: 0}
+    bottomRow: {x: 0, y: 0}
+    result: 2
+  - Name: HalfPlank1
+    topRow: {x: -1, y: -1}
+    bottomRow: {x: 0, y: 0}
+    result: 3
+  - Name: HalfPlank2
+    topRow: {x: 0, y: 0}
+    bottomRow: {x: -1, y: -1}
+    result: 3
+  - Name: Plank1
+    topRow: {x: -1, y: -1}
+    bottomRow: {x: 3, y: 3}
+    result: 4
+  - Name: Plank2
+    topRow: {x: 3, y: 3}
+    bottomRow: {x: -1, y: -1}
+    result: 4
+  - Name: BoatSide1
+    topRow: {x: 4, y: -1}
+    bottomRow: {x: -1, y: 4}
+    result: 5
+  - Name: BoatSide2
+    topRow: {x: -1, y: 4}
+    bottomRow: {x: 4, y: -1}
+    result: 5
+  - Name: BoatBottom1
+    topRow: {x: -1, y: -1}
+    bottomRow: {x: 4, y: 4}
+    result: 6
+  - Name: BoatBottom2
+    topRow: {x: 4, y: 4}
+    bottomRow: {x: -1, y: -1}
+    result: 6
+  - Name: BoatFrame
+    topRow: {x: 5, y: 5}
+    bottomRow: {x: 6, y: 6}
+    result: 7
+  - Name: CoconutFlotationDevice
+    topRow: {x: 1, y: 1}
+    bottomRow: {x: 1, y: 1}
+    result: 8
+  - Name: FloatingBoat1
+    topRow: {x: 7, y: 8}
+    bottomRow: {x: 8, y: 8}
+    result: 9
+  - Name: FloatingBoat2
+    topRow: {x: 8, y: 7}
+    bottomRow: {x: 8, y: 8}
+    result: 9
+  - Name: FloatingBoat3
+    topRow: {x: 8, y: 8}
+    bottomRow: {x: 7, y: 8}
+    result: 9
+  - Name: FloatingBoat4
+    topRow: {x: 8, y: 8}
+    bottomRow: {x: 8, y: 7}
+    result: 9
+  - Name: SetOfPaddles1
+    topRow: {x: 4, y: 3}
+    bottomRow: {x: 3, y: 4}
+    result: 10
+  - Name: SetOfPaddles2
+    topRow: {x: 3, y: 4}
+    bottomRow: {x: 4, y: 3}
+    result: 10
+  - Name: Paddleable1
+    topRow: {x: -1, y: -1}
+    bottomRow: {x: 9, y: 10}
+    result: 11
+  - Name: Paddleable2
+    topRow: {x: -1, y: -1}
+    bottomRow: {x: 10, y: 9}
+    result: 11
+  - Name: Paddleable3
+    topRow: {x: 9, y: 10}
+    bottomRow: {x: -1, y: -1}
+    result: 11
+  - Name: Paddleable4
+    topRow: {x: 10, y: 9}
+    bottomRow: {x: -1, y: -1}
+    result: 11

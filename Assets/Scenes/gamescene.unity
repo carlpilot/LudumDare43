@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 3186993}
   - component: {fileID: 3186992}
   - component: {fileID: 3186991}
+  - component: {fileID: 3186996}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -229,6 +230,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 3186989}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &3186996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3186989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &8057777
 Prefab:
   m_ObjectHideFlags: 0
@@ -351,6 +364,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
     type: 2}
   m_PrefabInternal: {fileID: 834413414}
+--- !u!1 &44702731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1585564589856042, guid: 184df816836af854d9fc2982fc5e32d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2017430443}
+--- !u!114 &44702732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44702731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &44702735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4285396833517682, guid: 184df816836af854d9fc2982fc5e32d5,
@@ -750,6 +780,129 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
     type: 2}
   m_PrefabInternal: {fileID: 271252319}
+--- !u!1 &117989390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117989391}
+  - component: {fileID: 117989394}
+  - component: {fileID: 117989393}
+  - component: {fileID: 117989392}
+  m_Layer: 5
+  m_Name: Craft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &117989391
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117989390}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1254106605}
+  m_Father: {fileID: 432315489}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 140, y: -220}
+  m_SizeDelta: {x: 300, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &117989392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117989390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 117989393}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1365676712}
+        m_MethodName: Craft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &117989393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117989390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 554aee69cb0e4144a81f801b5b2c18ba, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &117989394
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117989390}
+  m_CullTransparentMesh: 0
 --- !u!4 &118372146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -1028,6 +1181,7 @@ GameObject:
   - component: {fileID: 197604805}
   - component: {fileID: 197604804}
   - component: {fileID: 197604803}
+  - component: {fileID: 197604808}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -1131,6 +1285,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 197604801}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &197604808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197604801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &235161500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1310,7 @@ GameObject:
   - component: {fileID: 235161504}
   - component: {fileID: 235161503}
   - component: {fileID: 235161502}
+  - component: {fileID: 235161507}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -1247,6 +1414,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235161500}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &235161507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235161500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &246297078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -1546,6 +1725,7 @@ GameObject:
   - component: {fileID: 269908521}
   - component: {fileID: 269908520}
   - component: {fileID: 269908519}
+  - component: {fileID: 269908524}
   - component: {fileID: 269908518}
   m_Layer: 0
   m_Name: Food1(Clone)
@@ -1662,6 +1842,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 269908516}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &269908524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269908516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &271252319
 Prefab:
   m_ObjectHideFlags: 0
@@ -2017,8 +2209,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 325297096}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.143368, y: 3.848041, z: -662.197}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: -5.929917, y: -3.68, z: 4.129783}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2042,6 +2234,7 @@ GameObject:
   - component: {fileID: 333743030}
   - component: {fileID: 333743029}
   - component: {fileID: 333743028}
+  - component: {fileID: 333743033}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -2145,6 +2338,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 333743026}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &333743033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 333743026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &333744270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,6 +2899,7 @@ GameObject:
   - component: {fileID: 422173317}
   - component: {fileID: 422173316}
   - component: {fileID: 422173315}
+  - component: {fileID: 422173320}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -2797,6 +3003,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 422173313}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &422173320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422173313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &428627765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,13 +3157,16 @@ RectTransform:
   - {fileID: 1834177775}
   - {fileID: 1214682639}
   - {fileID: 1733648267}
+  - {fileID: 605070998}
+  - {fileID: 117989391}
+  - {fileID: 509542588}
   m_Father: {fileID: 248539181}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 400}
+  m_SizeDelta: {x: 600, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &432315490
 MonoBehaviour:
@@ -3084,6 +3305,7 @@ GameObject:
   - component: {fileID: 451202090}
   - component: {fileID: 451202089}
   - component: {fileID: 451202088}
+  - component: {fileID: 451202093}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -3187,6 +3409,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451202086}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &451202093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451202086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &465722201
 Prefab:
   m_ObjectHideFlags: 0
@@ -3482,6 +3716,111 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9048b58a840c61c4cad6f5984d3dc048, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &509542587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509542588}
+  - component: {fileID: 509542590}
+  - component: {fileID: 509542589}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &509542588
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509542587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 432315489}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -155, y: -27.5}
+  m_SizeDelta: {x: -330, y: -75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &509542589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509542587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b51a3e520f9164da198dc59c8acfccd6, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 59
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0.75
+  m_Text: '<b>Useful Crafting Recipes:</b>
+
+
+    - 4x Edible Sprout  -> Bowl of Sprouts
+
+
+    - 2x Edible Sprout (horizontally) -> Half-Plank
+
+
+    - 2x Half-Plank (horizontally) -> Plank
+
+
+    - 2x Plank (diagonally) -> Boat Side
+
+
+    - 2x Plank (horizontally) -> Boat Bottom
+
+
+    - 2x Boat Side (on top) + 2x Boat Bottom (below) -> Boat Frame
+
+
+    - 4x Aether Coconut -> Coconut Flotation Device
+
+
+    - Boat Frame + 3x Coconut Flotation Device (in any order) -> Floating Boat
+
+
+    - 2x Plank + 2x Half-Plank (diagonally) -> Set of Paddles
+
+
+    -Floating Boat + Set of Paddles (horizontally) -> <b>Escape Vehicle</b>'
+--- !u!222 &509542590
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509542587}
+  m_CullTransparentMesh: 0
 --- !u!1 &514145910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,6 +4209,7 @@ GameObject:
   - component: {fileID: 559892992}
   - component: {fileID: 559892991}
   - component: {fileID: 559892990}
+  - component: {fileID: 559892995}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -3973,6 +4313,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 559892988}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &559892995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559892988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &599893517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,6 +4396,129 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 599893517}
+  m_CullTransparentMesh: 0
+--- !u!1 &605070997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 605070998}
+  - component: {fileID: 605071001}
+  - component: {fileID: 605071000}
+  - component: {fileID: 605070999}
+  m_Layer: 5
+  m_Name: ClearGrid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &605070998
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605070997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1224512721}
+  m_Father: {fileID: 432315489}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 140, y: 140}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &605070999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605070997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 605071000}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1365676712}
+        m_MethodName: ClearGrid
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &605071000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605070997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 554aee69cb0e4144a81f801b5b2c18ba, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &605071001
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605070997}
   m_CullTransparentMesh: 0
 --- !u!4 &607731495 stripped
 Transform:
@@ -4218,6 +4693,7 @@ GameObject:
   - component: {fileID: 620303457}
   - component: {fileID: 620303456}
   - component: {fileID: 620303455}
+  - component: {fileID: 620303460}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -4321,6 +4797,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 620303453}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &620303460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620303453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &624376946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -4609,6 +5097,7 @@ GameObject:
   - component: {fileID: 719486031}
   - component: {fileID: 719486030}
   - component: {fileID: 719486029}
+  - component: {fileID: 719486034}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -4712,6 +5201,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719486027}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &719486034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719486027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &728492481
 Prefab:
   m_ObjectHideFlags: 0
@@ -4817,6 +5318,7 @@ GameObject:
   - component: {fileID: 728931095}
   - component: {fileID: 728931094}
   - component: {fileID: 728931093}
+  - component: {fileID: 728931098}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -4920,6 +5422,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728931091}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &728931098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 728931091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &734761055
 Prefab:
   m_ObjectHideFlags: 0
@@ -5237,6 +5751,7 @@ GameObject:
   - component: {fileID: 830141276}
   - component: {fileID: 830141275}
   - component: {fileID: 830141274}
+  - component: {fileID: 830141279}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -5340,6 +5855,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 830141272}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &830141279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 830141272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &834413414
 Prefab:
   m_ObjectHideFlags: 0
@@ -5411,6 +5938,7 @@ GameObject:
   - component: {fileID: 838916152}
   - component: {fileID: 838916151}
   - component: {fileID: 838916150}
+  - component: {fileID: 838916155}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -5514,6 +6042,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 838916148}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &838916155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 838916148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &840339014
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,6 +6139,7 @@ GameObject:
   - component: {fileID: 860430710}
   - component: {fileID: 860430709}
   - component: {fileID: 860430708}
+  - component: {fileID: 860430713}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -5702,6 +6243,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860430706}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &860430713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860430706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &867010777
 GameObject:
   m_ObjectHideFlags: 0
@@ -5789,6 +6342,7 @@ GameObject:
   - component: {fileID: 874794441}
   - component: {fileID: 874794440}
   - component: {fileID: 874794439}
+  - component: {fileID: 874794444}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -5892,6 +6446,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 874794437}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &874794444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874794437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &876197765
 Prefab:
   m_ObjectHideFlags: 0
@@ -6144,6 +6710,7 @@ GameObject:
   - component: {fileID: 931024231}
   - component: {fileID: 931024230}
   - component: {fileID: 931024229}
+  - component: {fileID: 931024234}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -6247,6 +6814,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931024227}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &931024234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931024227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &937245199
 Prefab:
   m_ObjectHideFlags: 0
@@ -6571,6 +7150,7 @@ GameObject:
   - component: {fileID: 1011022999}
   - component: {fileID: 1011022998}
   - component: {fileID: 1011022997}
+  - component: {fileID: 1011023002}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -6674,6 +7254,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011022995}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1011023002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011022995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &1031675363
 Prefab:
   m_ObjectHideFlags: 0
@@ -6880,6 +7472,7 @@ GameObject:
   - component: {fileID: 1068669823}
   - component: {fileID: 1068669822}
   - component: {fileID: 1068669821}
+  - component: {fileID: 1068669826}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -6983,6 +7576,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1068669819}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1068669826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068669819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &1069110761
 Prefab:
   m_ObjectHideFlags: 0
@@ -7054,6 +7659,7 @@ GameObject:
   - component: {fileID: 1082353293}
   - component: {fileID: 1082353292}
   - component: {fileID: 1082353291}
+  - component: {fileID: 1082353296}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -7157,6 +7763,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1082353289}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1082353296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1082353289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &1092341083
 Prefab:
   m_ObjectHideFlags: 0
@@ -7452,6 +8070,7 @@ GameObject:
   - component: {fileID: 1145042466}
   - component: {fileID: 1145042465}
   - component: {fileID: 1145042464}
+  - component: {fileID: 1145042469}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -7555,6 +8174,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145042462}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1145042469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145042462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1158180959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -7895,6 +8526,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1214682638}
   m_CullTransparentMesh: 0
+--- !u!1 &1224512720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224512721}
+  - component: {fileID: 1224512723}
+  - component: {fileID: 1224512722}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1224512721
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1224512720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 605070998}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: -2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1224512722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1224512720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b51a3e520f9164da198dc59c8acfccd6, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 66
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Clear Grid
+--- !u!222 &1224512723
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1224512720}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1235641223
 Prefab:
   m_ObjectHideFlags: 0
@@ -7994,6 +8700,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 23e3a0f8867371148b41114ee4df27a6,
     type: 3}
   m_PrefabInternal: {fileID: 1570862357}
+--- !u!1 &1254106604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254106605}
+  - component: {fileID: 1254106607}
+  - component: {fileID: 1254106606}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1254106605
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1254106604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 117989391}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: -2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1254106606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1254106604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b51a3e520f9164da198dc59c8acfccd6, type: 3}
+    m_FontSize: 32
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Craft
+--- !u!222 &1254106607
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1254106604}
+  m_CullTransparentMesh: 0
 --- !u!4 &1255984085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -8352,6 +9133,7 @@ GameObject:
   - component: {fileID: 1320966345}
   - component: {fileID: 1320966344}
   - component: {fileID: 1320966343}
+  - component: {fileID: 1320966348}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -8455,6 +9237,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1320966341}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1320966348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320966341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1350126903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -8514,6 +9308,7 @@ MonoBehaviour:
   - {fileID: 1130255340}
   - {fileID: 1303481924}
   - {fileID: 333744275}
+  recipes: {fileID: 11400000, guid: 205d79c3749901847a317ea2be983e24, type: 2}
 --- !u!1001 &1387831321
 Prefab:
   m_ObjectHideFlags: 0
@@ -8643,6 +9438,7 @@ GameObject:
   - component: {fileID: 1400841480}
   - component: {fileID: 1400841479}
   - component: {fileID: 1400841478}
+  - component: {fileID: 1400841483}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -8746,6 +9542,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400841476}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1400841483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1400841476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &1407465508
 GameObject:
   m_ObjectHideFlags: 0
@@ -9026,6 +9834,7 @@ GameObject:
   - component: {fileID: 1414127584}
   - component: {fileID: 1414127583}
   - component: {fileID: 1414127582}
+  - component: {fileID: 1414127587}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -9129,6 +9938,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414127580}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1414127587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1414127580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &1418314565
 GameObject:
   m_ObjectHideFlags: 0
@@ -9217,6 +10038,7 @@ GameObject:
   - component: {fileID: 1439687796}
   - component: {fileID: 1439687795}
   - component: {fileID: 1439687794}
+  - component: {fileID: 1439687799}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -9320,6 +10142,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1439687792}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1439687799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1439687792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &1455288126
 Prefab:
   m_ObjectHideFlags: 0
@@ -9512,6 +10346,7 @@ GameObject:
   - component: {fileID: 1477701994}
   - component: {fileID: 1477701993}
   - component: {fileID: 1477701992}
+  - component: {fileID: 1477701997}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -9615,6 +10450,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1477701990}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1477701997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1477701990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1499202578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -9749,6 +10596,7 @@ GameObject:
   - component: {fileID: 1506112237}
   - component: {fileID: 1506112236}
   - component: {fileID: 1506112235}
+  - component: {fileID: 1506112240}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -9852,6 +10700,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1506112233}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1506112240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1506112233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &1510225454
 GameObject:
   m_ObjectHideFlags: 0
@@ -10339,6 +11199,7 @@ GameObject:
   - component: {fileID: 1559857558}
   - component: {fileID: 1559857557}
   - component: {fileID: 1559857556}
+  - component: {fileID: 1559857561}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -10442,6 +11303,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1559857554}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1559857561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559857554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1564264497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -10509,6 +11382,10 @@ Prefab:
     - target: {fileID: 2300000, guid: 23e3a0f8867371148b41114ee4df27a6, type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 23e3a0f8867371148b41114ee4df27a6, type: 3}
+      propertyPath: m_TagString
+      value: Island
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23e3a0f8867371148b41114ee4df27a6, type: 3}
@@ -10596,6 +11473,7 @@ GameObject:
   - component: {fileID: 1581380357}
   - component: {fileID: 1581380356}
   - component: {fileID: 1581380355}
+  - component: {fileID: 1581380360}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -10699,6 +11577,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1581380353}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1581380360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1581380353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &1605730385
 Prefab:
   m_ObjectHideFlags: 0
@@ -11069,6 +11959,7 @@ GameObject:
   - component: {fileID: 1705802175}
   - component: {fileID: 1705802174}
   - component: {fileID: 1705802173}
+  - component: {fileID: 1705802178}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -11172,6 +12063,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1705802171}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1705802178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705802171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1708992923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -11195,6 +12098,7 @@ GameObject:
   - component: {fileID: 1716572357}
   - component: {fileID: 1716572356}
   - component: {fileID: 1716572355}
+  - component: {fileID: 1716572360}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -11298,6 +12202,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1716572353}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1716572360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716572353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1718821813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -12174,6 +13090,7 @@ GameObject:
   - component: {fileID: 1832722612}
   - component: {fileID: 1832722611}
   - component: {fileID: 1832722610}
+  - component: {fileID: 1832722615}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -12277,6 +13194,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1832722608}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1832722615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1832722608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &1834177774
 GameObject:
   m_ObjectHideFlags: 0
@@ -12572,6 +13501,7 @@ GameObject:
   - component: {fileID: 1916925848}
   - component: {fileID: 1916925847}
   - component: {fileID: 1916925846}
+  - component: {fileID: 1916925851}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -12675,6 +13605,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916925844}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1916925851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1916925844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1927083873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -12693,6 +13635,7 @@ GameObject:
   - component: {fileID: 1946644705}
   - component: {fileID: 1946644704}
   - component: {fileID: 1946644703}
+  - component: {fileID: 1946644708}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -12796,6 +13739,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1946644701}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1946644708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1946644701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!4 &1959524854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4710745743848286, guid: fc1a8d773dc1f334bb16ecdbf5dee784,
@@ -12884,6 +13839,7 @@ GameObject:
   - component: {fileID: 1999457355}
   - component: {fileID: 1999457354}
   - component: {fileID: 1999457353}
+  - component: {fileID: 1999457358}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -12987,6 +13943,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999457351}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &1999457358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999457351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1001 &2017430443
 Prefab:
   m_ObjectHideFlags: 0
@@ -13479,6 +14447,7 @@ GameObject:
   - component: {fileID: 2078343867}
   - component: {fileID: 2078343866}
   - component: {fileID: 2078343865}
+  - component: {fileID: 2078343870}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -13582,6 +14551,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2078343863}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &2078343870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2078343863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &2091234636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: b0afb78638ec684439ed110fc5a1419a,
@@ -13684,6 +14665,7 @@ GameObject:
   - component: {fileID: 2097602005}
   - component: {fileID: 2097602004}
   - component: {fileID: 2097602003}
+  - component: {fileID: 2097602008}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -13787,6 +14769,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2097602001}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &2097602008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2097602001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120
 --- !u!1 &2107453291
 GameObject:
   m_ObjectHideFlags: 0
@@ -13928,6 +14922,7 @@ GameObject:
   - component: {fileID: 2143553446}
   - component: {fileID: 2143553445}
   - component: {fileID: 2143553444}
+  - component: {fileID: 2143553449}
   m_Layer: 0
   m_Name: Food1(Clone)
   m_TagString: Highlightable
@@ -14031,3 +15026,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143553442}
   m_Mesh: {fileID: 4300000, guid: 8f7e58f5709a5a346925b766dfb58645, type: 3}
+--- !u!114 &2143553449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143553442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd7f9e33c751846b2e97d71c5ac3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avgTimeBetweenSpreading: 120

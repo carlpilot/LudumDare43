@@ -405,8 +405,10 @@
     <Compile Include="Assets\Scripts\Harvestable.cs" />
     <Compile Include="Assets\Scripts\HighlightableObject.cs" />
     <Compile Include="Assets\Scripts\Highlighter.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\CraftingRecipesScriptableObject.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\ItemScriptableObject.cs" />
     <Compile Include="Assets\Scripts\SpawnCoconuts.cs" />
+    <Compile Include="Assets\Scripts\SpreadPlant.cs" />
     <Compile Include="Assets\Scripts\Survival.cs" />
     <Compile Include="Assets\Scripts\UIInventory.cs" />
   </ItemGroup>
