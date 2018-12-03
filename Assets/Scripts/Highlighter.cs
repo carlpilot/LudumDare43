@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Highlighter : MonoBehaviour {
 
     public Text highlightedIdentifier;
+    public GameObject WinMenu;
 
 	void Update () {
         highlightedIdentifier.text = "";
@@ -23,6 +24,13 @@ public class Highlighter : MonoBehaviour {
             if (Input.GetMouseButtonUp (0) && hit.collider.GetComponent<Harvestable>() != null) {
                 hit.collider.GetComponent<Harvestable> ().Harvest ();
             }
+        }
+
+        if(Input.GetKeyDown(KeyCode.E) && highlightedIdentifier.text.Contains("Escape Vehicle")) {
+            Time.timeScale = 0;
+            WinMenu.SetActive (true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }
